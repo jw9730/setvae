@@ -7,6 +7,8 @@ This repository is an official implementation of the paper:
 [Seunghoon Hong](https://maga33.github.io/) (* equal contribution)  
 CVPR 2021
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/setvae-learning-hierarchical-composition-for/point-cloud-generation-on-shapenet-car)](https://paperswithcode.com/sota/point-cloud-generation-on-shapenet-car?p=setvae-learning-hierarchical-composition-for)
+
 <p align="center">
   <img src="docs/github_key.png"/>
 </p>
