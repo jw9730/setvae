@@ -59,9 +59,9 @@ We also provide the exact samples as ```shapenet15k-samples.zip``` from this [li
 
 Dataset | CUDA device | CUDA driver
 ---|---|---|
-Airplane | Titan Xp with Driver Version 450.102.04 | 10.1.243
-Car | Titan Xp with Driver Version 450.102.04 | 10.1.243
-Chair | RTX 2080ti with Driver Version 455.23.04 | 10.1.243
+ShapeNet-Airplane | Titan Xp with Driver Version 450.102.04 | 10.1.243
+ShapeNet-Car | Titan Xp with Driver Version 450.102.04 | 10.1.243
+ShapeNet-Chair | RTX 2080ti with Driver Version 455.23.04 | 10.1.243
 
 ## Evaluation
 After downloading the pre-trained models, you can run the scripts ```scripts/[DATASET]_test.sh``` evaluate the ShapeNet models.
