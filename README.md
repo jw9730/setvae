@@ -66,7 +66,7 @@ ShapeNet-Car | Titan Xp with driver version 450.102.04 | 10.1.243
 ShapeNet-Chair | RTX 2080ti with vriver version 455.23.04 | 10.1.243
 
 ## Evaluation
-After downloading the pre-trained models, you can run the scripts ```scripts/[DATASET]_test.sh``` evaluate the ShapeNet models.
+After downloading the pre-trained models, you can run the scripts ```scripts/[DATASET]_test.sh``` to evaluate the ShapeNet models.
 ```bash
 # Load a ShapeNet model checkpoint, generate point clouds, and run evaluation.
 bash scripts/shapenet_airplane_test.sh
