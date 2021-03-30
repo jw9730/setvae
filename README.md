@@ -1,4 +1,4 @@
-# SetVAE [Offical Pytorch Implementation]
+# SetVAE - Offical Pytorch Implementation
 This repository is an official implementation of the paper:  
 [SetVAE: Learning Hierarchical Composition for Generative Modeling of Set-Structured Data](https://arxiv.org/abs/2103.15619).  
 [Jinwoo Kim*](https://www.notion.so/a6f2de079fb445f4b97c0c1f6f52c2ec?v=1b00248f1c7c44259d9b78d7d3c6d588), 
