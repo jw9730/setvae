@@ -19,7 +19,7 @@ You can either use the Docker image ```wogns98/setvae```, or build your own Dock
 docker pull wogns98/setvae:latest
 ```
 
-If you don't want to use Docker, please follow bellow steps; but we highly recommend you to use docker.
+If you don't want to use Docker, please follow bellow steps; but we highly recommend you to use Docker.
 ```bash
 sudo apt-get update
 sudo apt-get install python3.6
