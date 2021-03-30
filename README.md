@@ -12,15 +12,15 @@ CVPR 2021
 </p>
 
 ## Installation
-We recommend you to use the Docker image ```wogns98/setvae```.
+We recommend you to either use the Docker image ```wogns98/setvae```, or build your own Docker image using the provided Dockerfile.
 ```bash
 docker pull wogns98/setvae:latest
 ```
-Or, you can build your own Docker image using the provided Dockerfile.
 
-**Not recommended** If you don't want to use Docker, please follow bellow steps.
-- **python==3.6 required**
+If you don't want to use Docker, please follow bellow steps; but we highly recommend you to use docker.
 ```bash
+sudo apt-get update
+sudo apt-get install python3.6
 git clone https://github.com/jw9730/setvae.git setvae
 cd setvae
 pip install -r requirements.txt
@@ -31,10 +31,11 @@ bash install.sh
 For MNIST and Set-MultiMNIST, the datasets will be downloaded from Torchvision server and processed automatically.
 
 For ShapeNet, we use the processed version provided by authors of [PointFlow](https://github.com/stevenygd/PointFlow). 
-Please download the dataset from this [link](https://drive.google.com/drive/folders/1G0rf-6HSHoTll6aH7voh-dXj6hCRhSAQ?usp=sharing).  
+Please download the dataset from this [link](https://drive.google.com/drive/folders/1G0rf-6HSHoTll6aH7voh-dXj6hCRhSAQ?usp=sharing). 
 After downloading, you should update the training, evaluation, and visualization scripts accordingly as in below example:
-```
-deepspeed train.py --shapenet_data_dir .../ShapeNet/ShapeNetCore.v2.PC15k [other args]
+```bash
+shapenet_data_dir=".../ShapeNet/ShapeNetCore.v2.PC15k"
+deepspeed train.py --shapenet_data_dir ${shapenet_data_dir} [other args]
 ```
 
 ## Training
@@ -47,14 +48,14 @@ bash scripts/shapenet_aiplane.sh
 bash scripts/shapenet_car.sh
 bash scripts/shapenet_chair.sh
 ```
- 
+
 ## Pre-Trained Models
 To reproduce the results in our paper, download ```checkpoints.zip``` from this [link](https://drive.google.com/drive/folders/1uO_Pi96U6IUqnmxjU1gGvYrIjw8cEcTl?usp=sharing).  
 Then, unzip ```checkpoints``` and place it in the project root, so that each checkpoint is located at ```checkpoints/gen/[DATASET]/camera-ready/checkpoint-[EPOCH].pt```.
 
 Note: Although we fixed the random seed for evaluation, the results can differ across different CUDA devices and versions. 
-For reproducibility, we provide the CUDA device specification and driver versions we used to produce the results of our paper. 
-You can also download the exact samples from this [link](https://drive.google.com/drive/folders/1uO_Pi96U6IUqnmxjU1gGvYrIjw8cEcTl?usp=sharing).
+For reproducibility, we provide the CUDA device specification and driver versions we used to produce the numbers of our paper. 
+We also provide the exact samples as ```shapenet15k-samples.zip``` from this [link](https://drive.google.com/drive/folders/1uO_Pi96U6IUqnmxjU1gGvYrIjw8cEcTl?usp=sharing).
 
 Dataset | CUDA device | CUDA driver
 ---|---|---|
@@ -89,16 +90,17 @@ After that, see the Jupyter notebooks in ```figures/``` folder and follow their 
 - ```MNIST_viz_attn.ipynb```: Visualize attention on Set-MNIST/MultiMNIST samples.
 - ```cardinality_generalization.ipynb```: Visualize cardinalty disentanglement and generalization.
 
-
-**Caution**: You need to install [open3d](http://www.open3d.org/docs/release/getting_started.html) for visualization of ShapeNet point clouds.
+Note: You need to install [open3d](http://www.open3d.org/docs/release/getting_started.html) for visualization of ShapeNet point clouds.
 
 ## Citation
 If you find our work useful, please cite it:
 ```
-@article{cvpr2021setvae,
- title={SetVAE: Learning Hierarchical Composition for Generative Modeling of Set-Structured Data},
- author={Kim, Jinwoo and Yoo, Jaehoon and Lee, Juho and Hong, Seunghoon},
- journal={arXiv},
- year={2021}
+@misc{kim2021setvae,
+      title={SetVAE: Learning Hierarchical Composition for Generative Modeling of Set-Structured Data}, 
+      author={Jinwoo Kim and Jaehoon Yoo and Juho Lee and Seunghoon Hong},
+      year={2021},
+      eprint={2103.15619},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
 }
 ```
