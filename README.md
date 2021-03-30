@@ -57,7 +57,7 @@ Then, unzip ```checkpoints``` and place it in the project root, so that each che
 
 Note: Although we fixed the random seed for evaluation, the results can differ across different CUDA devices and versions. 
 For reproducibility, we provide the CUDA device specification and driver versions we used to produce the numbers of our paper. 
-We also provide the exact samples as ```shapenet15k-samples.zip``` from this [link](https://drive.google.com/drive/folders/1uO_Pi96U6IUqnmxjU1gGvYrIjw8cEcTl?usp=sharing).
+We also provide the exact samples as ```shapenet15k-samples.zip``` in this [link](https://drive.google.com/drive/folders/1uO_Pi96U6IUqnmxjU1gGvYrIjw8cEcTl?usp=sharing).
 
 Dataset | CUDA device | CUDA driver
 ---|---|---|
