@@ -12,7 +12,7 @@ CVPR 2021
 </p>
 
 ## Installation
-We recommend you to either use the Docker image ```wogns98/setvae```, or build your own Docker image using the provided Dockerfile.
+You can either use the Docker image ```wogns98/setvae```, or build your own Docker image using the provided Dockerfile.
 ```bash
 docker pull wogns98/setvae:latest
 ```
