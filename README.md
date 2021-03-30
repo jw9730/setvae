@@ -95,7 +95,7 @@ After that, see the Jupyter notebooks in ```figures/``` folder and follow their 
 Note: You need to install [open3d](http://www.open3d.org/docs/release/getting_started.html) for visualization of ShapeNet point clouds.
 
 ## Citation
-If you find our work useful, please cite it:
+If you find our work useful, please consider citing it:
 ```
 @misc{kim2021setvae,
       title={SetVAE: Learning Hierarchical Composition for Generative Modeling of Set-Structured Data}, 
