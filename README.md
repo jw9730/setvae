@@ -97,12 +97,12 @@ Note: You need to install [open3d](http://www.open3d.org/docs/release/getting_st
 ## Citation
 If you find our work useful, please consider citing it:
 ```
-@misc{kim2021setvae,
-      title={SetVAE: Learning Hierarchical Composition for Generative Modeling of Set-Structured Data}, 
-      author={Jinwoo Kim and Jaehoon Yoo and Juho Lee and Seunghoon Hong},
-      year={2021},
-      eprint={2103.15619},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
+@InProceedings{Kim_2021_CVPR,
+    author    = {Kim, Jinwoo and Yoo, Jaehoon and Lee, Juho and Hong, Seunghoon},
+    title     = {SetVAE: Learning Hierarchical Composition for Generative Modeling of Set-Structured Data},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {15059-15068}
 }
 ```
